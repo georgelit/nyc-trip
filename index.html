@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Нью-Йорк, 7–11 октября 2026</title>
+<meta name="description" content="План поездки в Нью-Йорк на четыре ночи: пять дней по часам, что забронировать, план на дождь и открытые вопросы.">
+<meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
+<style>
+  :root{
+    --paper:#f4f2ec; --card:#fffefb; --ink:#16150f; --ink-soft:#56534a; --ink-faint:#8b877c;
+    --rule:#dcd7c9; --accent:#c2410c;
+    --d1:#0039A6; --d2:#00933C; --d3:#0039A6; --d4:#a16207; --d5:#EE352E;
+    --serif: ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans: ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --mono: ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#12110f; --card:#1b1a17; --ink:#f0ede5; --ink-soft:#a8a397; --ink-faint:#726e64;
+      --rule:#2e2c27; --accent:#fb923c;
+      --d1:#5b8def; --d2:#4ab86f; --d3:#5b8def; --d4:#d9a520; --d5:#f1665f;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#12110f; --card:#1b1a17; --ink:#f0ede5; --ink-soft:#a8a397; --ink-faint:#726e64;
+    --rule:#2e2c27; --accent:#fb923c;
+    --d1:#5b8def; --d2:#4ab86f; --d3:#5b8def; --d4:#d9a520; --d5:#f1665f;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:64px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+       font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;
+        padding:0 max(18px,env(safe-area-inset-left)) 80px max(18px,env(safe-area-inset-right))}
+
+  header.top{padding:44px 0 24px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+           color:var(--ink-faint);margin:0 0 12px}
+  h1{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;
+     font-size:clamp(34px,8vw,54px);line-height:1.02;margin:0 0 14px}
+  .lede{color:var(--ink-soft);margin:0;max-width:56ch}
+  .ver{display:inline-block;margin-top:16px;font-family:var(--mono);font-size:11.5px;
+       color:var(--ink-faint);border:1px solid var(--rule);border-radius:2px;padding:3px 8px}
+
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+         background:var(--rule);border:1px solid var(--rule);margin:26px 0 0}
+  .fact{background:var(--card);padding:13px 14px}
+  .fact dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+           color:var(--ink-faint);margin:0 0 5px}
+  .fact dd{margin:0;font-size:15px;font-weight:500;line-height:1.35}
+
+  nav.jump{position:sticky;top:0;z-index:9;background:var(--paper);
+           border-bottom:1px solid var(--rule);margin-top:30px;
+           padding-top:max(8px,env(safe-area-inset-top))}
+  .jumps{display:flex;gap:7px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
+  .jumps::-webkit-scrollbar{display:none}
+  .jumps a{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;text-decoration:none;
+           color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:6px 12px;
+           white-space:nowrap}
+  .jumps a:hover{border-color:var(--ink);}
+
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,5vw,30px);letter-spacing:-.01em;
+     line-height:1.15;margin:44px 0 6px}
+  h3{font-family:var(--sans);font-weight:600;font-size:16.5px;margin:26px 0 8px}
+  .sub{color:var(--ink-soft);margin:0 0 18px;font-size:15px}
+
+  .day{margin-top:44px;scroll-margin-top:64px}
+  .day-head{border-top:3px solid var(--c);padding-top:14px}
+  .day-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+           color:var(--c);margin:0 0 6px;font-weight:600}
+  .day h2{margin:0 0 6px}
+
+  ol.tl{list-style:none;margin:16px 0 0;padding:0}
+  ol.tl li{display:grid;grid-template-columns:62px 1fr;gap:4px 14px;
+           padding:12px 0;border-top:1px solid var(--rule)}
+  ol.tl li:first-child{border-top:none}
+  .t{font-family:var(--mono);font-size:13px;color:var(--ink-faint);
+     font-variant-numeric:tabular-nums;padding-top:2px}
+  .w{margin:0;font-weight:500}
+  .n{grid-column:2;margin:3px 0 0;font-size:14.5px;color:var(--ink-soft)}
+  .w b{font-weight:600;border-bottom:2px solid var(--c);padding-bottom:1px}
+
+  .note{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--accent);
+        padding:13px 15px;margin:18px 0 0;font-size:15px}
+  .note p{margin:0}
+  .note p + p{margin-top:8px}
+  .note.q{border-left-color:var(--d4)}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 0;font-size:15px;display:block;
+        overflow-x:auto;white-space:nowrap}
+  table.wrapok{white-space:normal}
+  th,td{text-align:left;padding:10px 12px 10px 0;border-top:1px solid var(--rule);vertical-align:top}
+  th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+     color:var(--ink-faint);font-weight:500;border-top:none}
+  td:last-child,th:last-child{padding-right:0}
+
+  ul.plain{margin:12px 0 0;padding:0;list-style:none}
+  ul.plain li{padding:9px 0 9px 18px;border-top:1px solid var(--rule);position:relative;font-size:15px}
+  ul.plain li::before{content:"";position:absolute;left:0;top:17px;width:6px;height:6px;
+                      border-radius:50%;background:var(--ink-faint)}
+  ul.plain li:first-child{border-top:none}
+
+  ol.qs{margin:14px 0 0;padding:0 0 0 22px}
+  ol.qs li{padding:9px 0;border-top:1px solid var(--rule);font-size:15.5px}
+  ol.qs li:first-child{border-top:none}
+
+  .pill{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
+        text-transform:uppercase;padding:2px 7px;border-radius:2px;border:1px solid currentColor;
+        vertical-align:1px;margin-left:6px}
+  .pill.book{color:var(--accent)}
+  .pill.ask{color:var(--d4)}
+  .pill.done{color:var(--d2)}
+
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--rule);
+         font-family:var(--mono);font-size:12px;color:var(--ink-faint);line-height:1.7}
+  footer a{color:var(--accent);text-underline-offset:2px}
+  @media (max-width:420px){
+    ol.tl li{grid-template-columns:54px 1fr;gap:3px 10px}
+    .t{font-size:12.5px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Нью-Йорк · 7–11 октября 2026</p>
+  <h1>Наш план</h1>
+  <p class="lede">Четыре ночи вдвоём, без ребёнка. Живём у Якоба в Джерси-Сити. Это черновик для проверки: времена ориентировочные, всё спорное помечено.</p>
+  <span class="ver">версия</span>
+
+  <dl class="facts">
+    <div class="fact"><dt>Туда</dt><dd>ср 07.10<br>BER 09:50 → JFK 12:45</dd></div>
+    <div class="fact"><dt>Обратно</dt><dd>вс 11.10<br>JFK 17:55 → BER 07:55</dd></div>
+    <div class="fact"><dt>База</dt><dd>Journal Square<br>Джерси-Сити</dd></div>
+    <div class="fact"><dt>Закат</dt><dd>18:22 до 18:28<br>темнеет рано</dd></div>
+  </dl>
+</header>
+
+<nav class="jump">
+  <div class="jumps">
+    <a href="#ср">ср 07</a>
+    <a href="#чт">чт 08</a>
+    <a href="#пт">пт 09</a>
+    <a href="#сб">сб 10</a>
+    <a href="#вс">вс 11</a>
+    <a href="#бронь">Бронь</a>
+    <a href="#дождь">Дождь</a>
+    <a href="#резерв">Резерв</a>
+    <a href="#вопросы">Вопросы</a>
+  </div>
+</nav>
+
+<section>
+  <h2>Как устроена дорога</h2>
+  <p class="sub">Journal Square стоит на PATH, и это главная удача поездки: Мидтаун и Даунтаун одинаково близко, маршруты можно строить без возвратов домой.</p>
+  <table class="wrapok">
+    <tr><th>Куда</th><th>Линия</th><th>В пути</th></tr>
+    <tr><td>33rd St, Мидтаун</td><td>JSQ до 33rd</td><td>23 мин</td></tr>
+    <tr><td>World Trade Center</td><td>NWK до WTC</td><td>20 мин</td></tr>
+    <tr><td>Exchange Place, набережная</td><td>2 остановки</td><td>7 мин</td></tr>
+  </table>
+  <div class="note"><p>По выходным PATH ходит по другой схеме, часть линий через Хобокен. В субботу и воскресенье маршрут смотрим в приложении, а не по будничной привычке.</p></div>
+</section>
+
+<section class="day" id="ср" style="--c:var(--d1)">
+  <div class="day-head"><p class="day-tag">Среда 7 октября</p><h2>Прилёт и разгон</h2></div>
+  <p class="sub">Задача дня одна: не лечь спать раньше 22:00 по местному. В момент посадки по берлинскому времени уже 18:45.</p>
+  <ol class="tl">
+    <li><span class="t">12:45</span><p class="w">Посадка в JFK, Терминал 4</p></li>
+    <li><span class="t">~14:00</span><p class="w">Вышли из терминала</p><p class="n">Паспортный контроль по ESTA обычно 30 до 60 минут. Сданного багажа нет, это экономит очередь.</p></li>
+    <li><span class="t">~15:15</span><p class="w">Дома, разобрать вещи, душ</p><p class="n">Такси или Uber, 130 до 150 $, 40 минут без пробок и до часа с ними. Общественным вышло бы 15 $ с человека, но это две пересадки и полтора часа с чемоданами.</p></li>
+    <li><span class="t">17:15</span><p class="w">PATH до Exchange Place, набережная</p></li>
+    <li><span class="t">18:28</span><p class="w"><b>Закат, Манхэттен через реку</b></p><p class="n">Лучшая первая картинка города, и при этом семь минут от дома.</p></li>
+    <li><span class="t">19:30</span><p class="w">Ужин на Newark Ave</p><p class="n">Десять минут пешком от дома.</p></li>
+    <li><span class="t">22:00</span><p class="w">Спать, не позже</p></li>
+  </ol>
+</section>
+
+<section class="day" id="чт" style="--c:var(--d2)">
+  <div class="day-head"><p class="day-tag">Четверг 8 октября</p><h2>Мидтаун, парк, Вест-Сайд</h2></div>
+  <ol class="tl">
+    <li><span class="t">09:30</span><p class="w"><b>Top of the Rock</b><span class="pill book">бронь</span></p><p class="n">Не Эмпайр: с Top of the Rock сам Эмпайр-стейт попадает в кадр, в этом весь смысл. Билет по времени.</p></li>
+    <li><span class="t">11:00</span><p class="w">Собор Святого Патрика, Пятая авеню, Рокфеллеровский центр</p></li>
+    <li><span class="t">12:00</span><p class="w">Центральный парк снизу</p><p class="n">Umpire Rock (лучшие кадры небоскрёбов над деревьями), Sheep Meadow, The Mall, Bethesda Terrace, Bow Bridge.</p></li>
+    <li><span class="t">13:30</span><p class="w">Обед в Chelsea Market</p><p class="n">LOS TACOS No.1 внутри самого рынка, два пункта закрываются одним заходом.</p></li>
+    <li><span class="t">15:00</span><p class="w"><b>High Line</b> с юга на север</p><p class="n">По дороге Little Island.</p></li>
+    <li><span class="t">16:30</span><p class="w">Hudson Yards, Vessel</p></li>
+    <li><span class="t">17:45</span><p class="w">Bryant Park</p><p class="n">Кофе в Blue Bottle и посидеть на стуле. Рядом бесплатная крыша библиотеки SNFL, лифт на 7-й этаж.</p></li>
+    <li><span class="t">18:30</span><p class="w">Таймс-сквер в темноте, ужин рядом</p></li>
+    <li><span class="t">20:00</span><p class="w"><b>Бродвей</b><span class="pill ask">от Якоба</span></p><p class="n">Если билеты окажутся на этот день.</p></li>
+  </ol>
+  <div class="note"><p>Больших музеев в плане нет вообще. MoMA стоял в этом слоте и снят: на четыре дня в незнакомом городе полдня в помещении это дорого.</p></div>
+</section>
+
+<section class="day" id="пт" style="--c:var(--d3)">
+  <div class="day-head"><p class="day-tag">Пятница 9 октября</p><h2>Даунтаун, мост, вечер с друзьями</h2></div>
+  <ol class="tl">
+    <li><span class="t">09:30</span><p class="w">Staten Island Ferry</p><p class="n">Бесплатный, 25 минут в одну сторону, проходит мимо Статуи Свободы. На обратном пути надо выйти с судна и зайти заново. Лучшие виды с носа и кормы, на верхние палубы подниматься смысла нет.</p></li>
+    <li><span class="t">11:00</span><p class="w"><b>9/11 Memorial и музей</b><span class="pill book">бронь</span></p></li>
+    <li><span class="t">13:30</span><p class="w">Oculus, Уолл-стрит, Чарджинг Булл</p><p class="n">Дальше пешком на север через Трайбеку, SoHo и Little Italy.</p></li>
+    <li><span class="t">14:45</span><p class="w"><b>Katz's Delicatessen</b></p><p class="n">Один сэндвич с пастрами на двоих, этого более чем достаточно. Не потерять талон, который дают на входе: за потерянный берут 50 $, даже если ничего не заказали.</p></li>
+    <li><span class="t">16:00</span><p class="w">Вниз через Chinatown к мосту</p></li>
+    <li><span class="t">16:30</span><p class="w"><b>Бруклинский мост</b></p><p class="n">Вход со стороны Манхэттена, закат 18:25 застанет примерно на середине.</p></li>
+    <li><span class="t">17:30</span><p class="w">DUMBO</p><p class="n">Кадр на Washington Street с мостом и Эмпайром в проёме.</p></li>
+    <li><span class="t">18:00</span><p class="w">Time Out Market</p><p class="n">Бесплатная крыша с видом на Манхэттен, взять напиток.</p></li>
+    <li><span class="t">19:30</span><p class="w"><b>Стейкхаус с Якобом и его девушкой</b><span class="pill book">бронь</span></p></li>
+    <li><span class="t">22:00</span><p class="w"><b>Руфтоп-бар</b><span class="pill ask">от Якоба</span></p></li>
+  </ol>
+  <div class="note"><p>День плотный. Если будет ощущение гонки, первым режется Katz's: он единственный требует крюка, минут по пятнадцать в каждую сторону.</p></div>
+  <div class="note q"><p><b>Развилка.</b> Westlight это крыша в Уильямсбурге. Если Якоб её одобрит, вечер целиком уезжает в Бруклин: мост, DUMBO, Уильямсбург, и стейкхаус ищем там же. Тогда Keens в Мидтауне отпадает.</p></div>
+</section>
+
+<section class="day" id="сб" style="--c:var(--d4)">
+  <div class="day-head"><p class="day-tag">Суббота 10 октября</p><h2>Маленькая Одесса и Маленькая Украина</h2></div>
+  <p class="sub">Брайтон-Бич и «Маленькая Одесса» это одно и то же место. Дорога съедает три часа туда-обратно, поэтому день отдаётся им целиком. Суббота выбрана осознанно: в выходные квартал живой, и Luna Park на Кони-Айленде в октябре работает только по выходным.</p>
+  <ol class="tl">
+    <li><span class="t">09:00</span><p class="w">Выход из дома</p></li>
+    <li><span class="t">09:20</span><p class="w">PATH до 33rd St, 23 мин</p></li>
+    <li><span class="t">09:50</span><p class="w">Q от 34 St-Herald Sq</p><p class="n">45 минут прямо, без пересадок. Поезд идёт поверху по Манхэттенскому мосту, вид бесплатным бонусом.</p></li>
+    <li><span class="t">10:40</span><p class="w"><b>Брайтон-Бич</b></p><p class="n">Brighton Beach Ave под эстакадой: продуктовые, кондитерские, вывески на русском. Дальше променад и пляж, в октябре пустой.</p></li>
+    <li><span class="t">13:00</span><p class="w">Обед</p><p class="n">На променаде Tatiana Grill и Cafe Volna. Из непривычного: Kashkar Cafe (уйгурская), Little Georgia и Berikoni с хачапури. Продуктовые с готовой едой: Taste of Russia, Gold Label на 281 Brighton Beach Ave, Vintage Gourmet на 287.</p></li>
+    <li><span class="t">14:30</span><p class="w">Пешком по променаду на Кони-Айленд</p><p class="n">20 до 25 минут.</p></li>
+    <li><span class="t">15:00</span><p class="w">Кони-Айленд</p><p class="n">Пирс, Wonder Wheel, Cyclone, Nathan's Famous на углу Surf и Stillwell.</p></li>
+    <li><span class="t">17:00</span><p class="w">Q обратно от Coney Island-Stillwell Ave</p></li>
+    <li><span class="t">18:30</span><p class="w"><b>Украинский квартал</b></p><p class="n">Выход на 14th St-Union Square, дальше восемь минут пешком. East 7th St между Второй авеню и Avenue A.</p></li>
+    <li><span class="t">19:00</span><p class="w">Ужин в Veselka</p><p class="n">Работает с 1954 года, по субботам до полуночи.</p></li>
+    <li><span class="t">21:00</span><p class="w">Домой через станцию PATH 14th St</p></li>
+  </ol>
+  <div class="note"><p><b>Streecha (33 E 7th St, в подвале) работает только с пятницы по воскресенье и до 17:00.</b> После Брайтона вы туда не успеваете. Если нужна именно она, её надо ставить отдельным дневным заходом.</p></div>
+</section>
+
+<section class="day" id="вс" style="--c:var(--d5)">
+  <div class="day-head"><p class="day-tag">Воскресенье 11 октября</p><h2>Утро и вылет</h2></div>
+  <ol class="tl">
+    <li><span class="t">09:00</span><p class="w">Бранч</p></li>
+    <li><span class="t">10:30</span><p class="w">Что не успели, или последняя прогулка</p></li>
+    <li><span class="t">12:30</span><p class="w">Вещи собраны</p><p class="n">Собрать лучше в субботу вечером.</p></li>
+    <li><span class="t">13:30</span><p class="w">Выезд к JFK на такси</p><p class="n">40 до 60 минут.</p></li>
+    <li><span class="t">15:00</span><p class="w">В аэропорту</p></li>
+    <li><span class="t">17:55</span><p class="w"><b>Вылет AF9085</b></p></li>
+  </ol>
+</section>
+
+<section id="бронь">
+  <h2>Что забронировать</h2>
+  <table class="wrapok">
+    <tr><th>Что</th><th>Кто</th><th>Когда</th></tr>
+    <tr><td><b>ESTA</b></td><td>Георгий</td><td>срочно, адрес уже есть</td></tr>
+    <tr><td>Бродвей: шоу и день</td><td>Якоб</td><td>на этой неделе, от этого зависит раскладка вечеров</td></tr>
+    <tr><td>Стейкхаус</td><td>Якоб или Георгий</td><td>сейчас</td></tr>
+    <tr><td>Руфтоп-бар</td><td>Якоб</td><td>вечером 12 до 14 градусов, нужен обогрев или закрытая часть</td></tr>
+    <tr><td>Top of the Rock</td><td>Георгий</td><td>за неделю, слот на утро</td></tr>
+    <tr><td>Музей 9/11</td><td>Георгий</td><td>за неделю</td></tr>
+    <tr><td>eSIM на США</td><td>Георгий</td><td>за пару дней до вылета</td></tr>
+    <tr><td>Медстраховка</td><td>Георгий</td><td>проверить, покрывает ли текущая</td></tr>
+  </table>
+  <div class="note"><p><b>Peter Luger отпадает.</b> Столик бронируют за 4 до 6 недель, и он не принимает кредитные карты: только наличные и американские дебетовые. Реальная замена это Keens на 72 W 36th, работает с 1885 года, и он в двух шагах от станции 33rd St.</p></div>
+</section>
+
+<section id="дождь">
+  <h2>План Б: дождь</h2>
+  <p class="sub">Больших музеев не хотим, поэтому запасной план строится из маленького и бесплатного. Всё привязано к месту, где вы в этот момент и так находитесь.</p>
+
+  <h3>Четверг</h3>
+  <p class="sub">Галереи Челси стоят ровно там же, где High Line: кварталы West 19th до West 24th между 10-й и 11-й авеню. Вход везде бесплатный, без билетов и брони, обычно вторник до субботы с 10 до 18. Hauser &amp; Wirth на 525 W 19th, David Zwirner на 19-й и 20-й, Gagosian на 555 W 24th. Залы музейного масштаба, только без касс и без толпы. По четвергам с 18 до 20 там вернисажи, заходить можно всем.</p>
+
+  <h3>Пятница</h3>
+  <ul class="plain">
+    <li>Половина дня и так под крышей: музей 9/11 и Oculus</li>
+    <li>Tenement Museum, 103 Orchard St: квартиры иммигрантов, только экскурсией, час, нужна бронь</li>
+    <li>ICP, центр фотографии, 84 Ludlow St</li>
+  </ul>
+
+  <h3>Суббота</h3>
+  <p class="sub">Брайтон и Кони-Айленд это улица, набережная и пляж. Под дождём смысла нет. Правильный ответ не музей, а поменять субботу с четвергом местами. Пересмотреть придётся только PATH: по выходным он ходит иначе.</p>
+
+  <h3>Затычки на час в Мидтауне</h3>
+  <ul class="plain">
+    <li>Morgan Library, 225 Madison на углу 36-й. Вторник до четверга до 17:00, понедельник закрыт</li>
+    <li>Читальный зал Публичной библиотеки, Пятая авеню и 42-я. Бесплатно</li>
+    <li>Grand Central. Бесплатно, и по дороге куда угодно</li>
+  </ul>
+</section>
+
+<section id="резерв">
+  <h2>Резерв</h2>
+  <p class="sub">Рассмотрено, в план не встало. Достаём, если что-то отваливается.</p>
+  <table class="wrapok">
+    <tr><th>Вариант</th><th>Чего стоит</th><th>Взамен чего</th></tr>
+    <tr><td>Статуя Свободы с высадкой</td><td>полдня, билет заранее</td><td>бесплатного парома в пятницу</td></tr>
+    <tr><td>Эмпайр-стейт, SUMMIT, Edge</td><td>1,5 до 2 часов, от 36 до 48 $</td><td>Top of the Rock в четверг</td></tr>
+    <tr><td>Roosevelt Island Tramway</td><td>4 минуты, обычный тариф 3 $</td><td>ничего, если найдётся окно</td></tr>
+    <tr><td>Washington Square Park</td><td>1,5 часа</td><td>свободного вечера</td></tr>
+    <tr><td>Уильямсбург</td><td>полвечера</td><td>вечера пятницы после DUMBO</td></tr>
+    <tr><td>Гарлем, воскресный госпел</td><td>всё воскресное утро, нужна бронь</td><td>спокойного утра перед вылетом</td></tr>
+    <tr><td>Motek Flatiron</td><td>happy hour 14 до 17, всё по 5 $</td><td>обеда в любой день</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Деньги и транспорт</h2>
+  <ul class="plain">
+    <li><b>Метро и автобусы:</b> только OMNY, прикладываете телефон или бесконтактную карту прямо к турникету. Поездка 3,00 $, недельный потолок 35 $, после 12 оплаченных поездок остаток недели бесплатный. Потолок считается на одно устройство, поэтому весь срок прикладывайте одно и то же. У Насти свой счётчик со своего телефона</li>
+    <li><b>PATH:</b> 3,25 $ за поездку, дневной проездной 12,50 $, недельный 42,75 $. Считается отдельно от метро. При четырёх днях скорее всего дешевле платить по факту телефоном</li>
+    <li><b>Чаевые:</b> 18 до 20 % в ресторанах, доллар или два за напиток в баре</li>
+  </ul>
+</section>
+
+<section id="вопросы">
+  <h2>Что нужно решить</h2>
+  <ol class="qs">
+    <li>Какой вечер Якоб с девушкой могут занять: пятница или суббота? Сейчас стоит пятница, но суббота людям обычно удобнее</li>
+    <li>Бродвей: какое шоу, какой день, вечер или дневной сеанс</li>
+    <li>Якоб с девушкой присоединяются днём хоть в один из дней, или встречаемся только вечером</li>
+    <li>Стейкхаус в Мидтауне (Keens) или в Бруклине под крышу Westlight</li>
+    <li>Есть ли у Насти что-то своё: конкретные места, что-то из инстаграма</li>
+    <li>План плотный, свободного дня в нём нет. Так и хотим, или заложить полдня на «ничего не планируем»</li>
+  </ol>
+</section>
+
+<footer>
+  <p>Черновик для проверки. Правится по ходу разговора.<br>
+  <a href="v/">версия</a></p>
+</footer>
+
+</div>
+</body>
+</html>
