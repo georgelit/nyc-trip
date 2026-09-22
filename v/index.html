@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>История версий — Нью-Йорк</title>
+<meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --paper:#f4f2ec; --card:#fffefb; --ink:#16150f; --ink-soft:#56534a;
+    --ink-faint:#8b877c; --rule:#dcd7c9; --sat:#c2410c;
+    --serif: ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans: ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --mono: ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#12110f; --card:#1b1a17; --ink:#f0ede5; --ink-soft:#a8a397;
+            --ink-faint:#726e64; --rule:#2e2c27; --sat:#fb923c; }
+  }
+  :root[data-theme="dark"] { --paper:#12110f; --card:#1b1a17; --ink:#f0ede5; --ink-soft:#a8a397;
+            --ink-faint:#726e64; --rule:#2e2c27; --sat:#fb923c; }
+  :root[data-theme="light"] { --paper:#f4f2ec; --card:#fffefb; --ink:#16150f; --ink-soft:#56534a;
+            --ink-faint:#8b877c; --rule:#dcd7c9; --sat:#c2410c; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans);
+         font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto;
+          padding:0 max(20px,env(safe-area-inset-left)) 70px max(20px,env(safe-area-inset-right)); }
+  header { padding:48px 0 22px; border-bottom:1px solid var(--rule); }
+  .eyebrow { font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+             color:var(--ink-faint); margin:0 0 12px; }
+  h1 { font-family:var(--serif); font-weight:600; letter-spacing:-.02em; font-size:clamp(30px,6vw,46px);
+       line-height:1.05; margin:0 0 14px; }
+  .lede { color:var(--ink-soft); margin:0; max-width:58ch; }
+  ol { list-style:none; margin:26px 0 0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  .v { background:var(--card); border:1px solid var(--rule); border-radius:3px; padding:14px 16px;
+       display:grid; grid-template-columns:auto auto 1fr auto; gap:6px 14px; align-items:baseline; }
+  .num { font-family:var(--mono); font-size:15px; font-weight:600; color:var(--sat);
+         text-decoration:none; border-bottom:1px solid currentColor; }
+  .when { font-family:var(--mono); font-size:13px; color:var(--ink-faint);
+          font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .msg { color:var(--ink-soft); }
+  .who { font-family:var(--mono); font-size:12px; color:var(--ink-faint); white-space:nowrap; }
+  .v:first-child { border-color:var(--sat); }
+  .v:first-child::after { content:"актуальная"; grid-column:1/-1; font-family:var(--mono); font-size:11px;
+                          letter-spacing:.1em; text-transform:uppercase; color:var(--sat); }
+  @media (max-width:600px) {
+    .v { grid-template-columns:auto 1fr; }
+    .msg { grid-column:1/-1; }
+    .who { grid-column:1/-1; }
+  }
+  footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--rule);
+           font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
+  a { color:var(--sat); text-underline-offset:2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Нью-Йорк · 7–11 октября 2026</p>
+    <h1>История версий</h1>
+    <p class="lede">Каждая публикация замораживается отдельной страницей и остаётся доступной навсегда.
+      Всего версий: 1. <a href="../">Открыть актуальную →</a></p>
+  </header>
+  <ol>
+    <li class="v">
+      <a class="num" href="v1.html">v1</a>
+      <span class="when">22 сен 2026, 21:06</span>
+      <span class="msg">первая версия: пять дней по часам, бронь, план на дождь, резерв и вопросы</span>
+      <span class="who">неизвестно</span>
+    </li>
+  </ol>
+  <footer>Страница собирается автоматически при публикации</footer>
+</div>
+</body>
+</html>
