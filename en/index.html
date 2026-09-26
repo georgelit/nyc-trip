@@ -120,12 +120,20 @@
     ol.tl li{grid-template-columns:54px 1fr;gap:3px 10px}
     .t{font-size:12.5px}
   }
+  .switch{display:inline-flex;gap:2px;padding:3px;margin:0 0 20px;border:1px solid var(--rule);
+          border-radius:999px;background:var(--card)}
+  .switch a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;
+            font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;text-decoration:none;
+            color:var(--ink-soft);white-space:nowrap}
+  .switch a:hover{color:var(--ink)}
+  .switch a[aria-current="page"]{background:var(--ink);color:var(--paper)}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header class="top">
+  <nav class="switch" aria-label="Версия страницы / Page version"><a href="/nyc-trip/">RU · полная</a><a href="/nyc-trip/en/" aria-current="page">EN · for Jakob</a></nav>
   <p class="eyebrow">New York · October 7–11, 2026</p>
   <h1>Our rough plan</h1>
   <p class="lede">Thanks a lot for having us! This is a first draft, nothing is set in stone. Tell us what you'd change.</p>
